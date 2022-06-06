@@ -11,7 +11,20 @@ Basic Command Handler In PhP
 ```php
 "example" => new ExampleCommand()
 ```
+* When Initializing Use
+```php
+use YourName\Abc;
+```
 
-# TODO 
+# Todo 
 
 * Change Namespace When Using
+
+# Note
+
+* Must Initizalize Handler On Enable
+```php
+public function onEnable(): void
+{
+  CommandHandler::init();
+}
